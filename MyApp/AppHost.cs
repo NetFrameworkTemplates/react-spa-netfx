@@ -20,8 +20,6 @@ namespace MyApp
         /// </summary>
         public override void Configure(Container container)
         {
-            Plugins.Add(new TemplatePagesFeature());
-
             SetConfig(new HostConfig
             {
                 DebugMode = AppSettings.Get("DebugMode", false),
@@ -29,6 +27,8 @@ namespace MyApp
                 AddRedirectParamsToQueryString = true,
                 UseCamelCase = true,
             });
+
+            Plugins.Add(new TemplatePagesFeature());
         }
     }
 }

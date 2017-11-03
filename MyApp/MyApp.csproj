@@ -88,6 +88,9 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <None Include="Properties\PublishProfiles\PublishToIIS.pubxml">
+      <SubType>Designer</SubType>
+    </None>
     <Content Include="Web.config" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -121,22 +124,6 @@
     <Content Include="webpack.config.js" />
     <Content Include="webpack.config.vendor.js" />
   </ItemGroup>
-  <ItemGroup />
-  <PropertyGroup>
-    <CopyAllFilesToSingleFolderForMSDeployDependsOn>
-      OnPublish;
-      $(CopyAllFilesToSingleFolderForMSDeployDependsOn);
-    </CopyAllFilesToSingleFolderForMSDeployDependsOn>
-  </PropertyGroup>
-  <Target Name="OnPublish">
-    <ItemGroup>
-      <Exec Command="npm run publish" />
-      <wwwroot Include="wwwroot\**\*" />
-      <FilesForPackagingFromProject Include="%(wwwroot.Identity)">
-        <DestinationRelativePath>wwwroot\%(RecursiveDir)%(Filename)%(Extension)</DestinationRelativePath>
-      </FilesForPackagingFromProject>
-    </ItemGroup>
-  </Target>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
