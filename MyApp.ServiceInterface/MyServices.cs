@@ -9,7 +9,7 @@ using MyApp.ServiceModel;
 namespace MyApp.ServiceInterface
 {
     [Exclude(Feature.Metadata)]
-    [FallbackRoute("/{PathInfo*}")]
+    [FallbackRoute("/{PathInfo*}", MatchRule="AcceptsHtml")]
     public class FallbackForClientRoutes
     {
         public string PathInfo { get; set; }
