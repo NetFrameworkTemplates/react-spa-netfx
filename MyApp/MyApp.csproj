@@ -104,6 +104,8 @@
     <Content Include="src\view1\view.css" />
     <Content Include="src\app.scss" />
     <Content Include="src\test.fileMock.js" />
+    <Content Include="src\test.setup.js" />
+    <Content Include="src\test.shim.js" />
   </ItemGroup>
   <ItemGroup>
     <TypeScriptCompile Include="src\home\Hello.test.tsx" />
