@@ -91,6 +91,8 @@
     <None Include="Properties\PublishProfiles\PublishToIIS.pubxml">
       <SubType>Designer</SubType>
     </None>
+    <Content Include="src\test.setup.js" />
+    <Content Include="src\test.shim.js" />
     <Content Include="Web.config" />
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
