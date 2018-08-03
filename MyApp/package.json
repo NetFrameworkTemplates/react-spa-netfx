@@ -7,7 +7,7 @@
     "start": "react-scripts-ts start",
     "dtos": "cd src && typescript-ref",
     "build": "rimraf wwwroot/ && react-scripts-ts build && (move build wwwroot || mv build wwwroot)",
-    "publish": "npm run build && dotnet publish -c Release",
+    "publish": "npm run build",
     "test": "react-scripts-ts test --watchAll",
     "test-coverage": "npm test -- --coverage",
     "eject": "react-scripts-ts eject"
