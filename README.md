@@ -6,7 +6,7 @@ ASP.NET Framework React Webpack App Template
 
 > Browse [source code](https://github.com/NetFrameworkTemplates/react-spa-netfx), view live demo [react-spa.web-templates.io](http://react-spa.web-templates.io) and install with [dotnet-new](http://docs.servicestack.net/dotnet-new):
 
-    $ dotnet tool install --global web
+    $ dotnet tool install --global x
 
-    $ web new react-spa-netfx ProjectName
+    $ x new react-spa-netfx ProjectName
 
